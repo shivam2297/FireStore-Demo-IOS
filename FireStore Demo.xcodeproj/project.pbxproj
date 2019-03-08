@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				9DDF692B22322A1900DBD585 /* AppDelegate.swift */,
-				9DDF692D22322A1900DBD585 /* ViewController.swift */,
-				9DDF692F22322A1900DBD585 /* Main.storyboard */,
-				9DDF693222322A2400DBD585 /* Assets.xcassets */,
-				9DDF693422322A2400DBD585 /* LaunchScreen.storyboard */,
+				9DDF693D22322B4500DBD585 /* ViewController */,
+				9DDF693E22322B8400DBD585 /* View */,
 				9DDF693722322A2400DBD585 /* Info.plist */,
 			);
 			path = "FireStore Demo";
+			sourceTree = "<group>";
+		};
+		9DDF693D22322B4500DBD585 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DDF692D22322A1900DBD585 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9DDF693E22322B8400DBD585 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DDF692F22322A1900DBD585 /* Main.storyboard */,
+				9DDF693222322A2400DBD585 /* Assets.xcassets */,
+				9DDF693422322A2400DBD585 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
