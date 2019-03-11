@@ -17,9 +17,11 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        FirebaseHelperFactory.firebaseHelper().addData()
+//        FirebaseHelperFactory.firebaseHelper().addData()
+    }
+    @IBAction func getDataBtnTapped(_ sender: Any) {
         FirebaseHelperFactory.firebaseHelper().readData()
     }
-    
+
 }
 
