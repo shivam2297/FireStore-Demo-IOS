@@ -77,7 +77,7 @@ class FirebaseHelper {
 }
 
 class FirebaseHelperFactory {
-    static var helper: FirebaseHelper? = nil
+    static var helper: FirebaseHelper?
     class func firebaseHelper() -> FirebaseHelper {
         if helper == nil {
             helper = FirebaseHelper()
