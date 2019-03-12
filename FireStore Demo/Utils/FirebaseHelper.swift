@@ -12,6 +12,7 @@ import Firebase
 class FirebaseHelper {
 
     let db = Firestore.firestore()
+    var listener: ListenerRegistration? = nil
 
     func addData() {
         // Add a new document with a generated ID
@@ -51,6 +52,26 @@ class FirebaseHelper {
                     print("\(document.documentID) => \(document.data())")
                 }
             }
+        }
+    }
+
+    func listenData() {
+        print("Started listening data from users collection")
+        listener = db.collection("users").addSnapshotListener { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+    }
+
+    func stopListenData() {
+        if let listener = self.listener {
+            listener.remove()
+            print("Stoped listening data from users collection")
         }
     }
 }

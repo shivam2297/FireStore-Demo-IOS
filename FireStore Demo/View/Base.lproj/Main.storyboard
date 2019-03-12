@@ -18,18 +18,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-P9-kXw">
-                                <rect key="frame" x="157" y="318.5" width="61" height="30"/>
-                                <state key="normal" title="Get Data"/>
-                                <connections>
-                                    <action selector="getDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1f-5K-4QC"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pu2-Qf-lac">
+                                <rect key="frame" x="121" y="223.5" width="133" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhh-P9-kXw">
+                                        <rect key="frame" x="36" y="0.0" width="61" height="30"/>
+                                        <state key="normal" title="Get Data"/>
+                                        <connections>
+                                            <action selector="getDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1f-5K-4QC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-IJ-54E">
+                                        <rect key="frame" x="35.5" y="38" width="62" height="30"/>
+                                        <state key="normal" title="add Data"/>
+                                        <connections>
+                                            <action selector="addDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKm-ZF-hW4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCi-zO-cxQ">
+                                        <rect key="frame" x="7.5" y="76" width="118" height="30"/>
+                                        <state key="normal" title="start adding data"/>
+                                        <connections>
+                                            <action selector="startAddingDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yef-9m-Tpd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOk-sO-id2">
+                                        <rect key="frame" x="8.5" y="114" width="116" height="30"/>
+                                        <state key="normal" title="stop adding data"/>
+                                        <connections>
+                                            <action selector="stopAddingDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kx2-s2-klN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-GD-d9p">
+                                        <rect key="frame" x="0.0" y="152" width="133" height="30"/>
+                                        <state key="normal" title="start recieving data"/>
+                                        <connections>
+                                            <action selector="startRecievingDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyd-gM-LL9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-xY-BEL">
+                                        <rect key="frame" x="1" y="190" width="131" height="30"/>
+                                        <state key="normal" title="stop recieving data"/>
+                                        <connections>
+                                            <action selector="stopRecievingDataBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuk-ln-LSl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Dhh-P9-kXw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Op-uF-W32"/>
-                            <constraint firstItem="Dhh-P9-kXw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zsj-RV-LCJ"/>
+                            <constraint firstItem="Pu2-Qf-lac" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5vb-tt-iAF"/>
+                            <constraint firstItem="Pu2-Qf-lac" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2n-AJ-DPR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
